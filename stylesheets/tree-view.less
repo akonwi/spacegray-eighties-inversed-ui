@@ -12,7 +12,9 @@
 
 .focusable-panel {
   opacity: 1;
-
+  li.selected:before {
+    background-color: @tree-selected-item-background-color;
+  }
   &:focus {
     .selected > .name,
     .selected > .name:before,
