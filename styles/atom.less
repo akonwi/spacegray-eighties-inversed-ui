@@ -12,19 +12,46 @@ status-bar {
   background-color: @app-background-color;
 }
 
-.config-menu {
+.settings-view.pane-item {
+  .section {
+    border: none;
+  }
   background-color: @tree-background-color !important;
-  li .icon {
-    color: @text-color-subtle;
-    &:hover {
-      background: @tree-selected-item-background-color !important;
-      color: white !important;
+  .section-heading, .text {
+    color: @text-color !important;
+  }
+  .package-card {
+    background: @editor-background-color;
+    border: none;
+    color: @text-color;
+    .body h4 a { color: white; }
+    .meta .meta-controls {
+      .btn-toolbar { background: white }
     }
   }
-  li.active {
-    .icon {
-      background: @tree-selected-item-background-color !important;
-      color: white;
+  .config-menu {
+    background-color: @tree-background-color !important;
+    border: none;
+    li .icon {
+      color: @text-color-subtle;
+      &:hover {
+        background: @tree-selected-item-background-color !important;
+        color: white !important;
+      }
+    }
+    li.active {
+      .icon {
+        background: @tree-selected-item-background-color !important;
+        color: white;
+      }
+    }
+    .button-area {
+      .btn-default {
+        color: white;
+        &:hover {
+          background: @tree-selected-item-background-color;
+        }
+      }
     }
   }
 }
