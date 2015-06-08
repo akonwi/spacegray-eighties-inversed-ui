@@ -11,3 +11,20 @@ atom-workspace {
 status-bar {
   background-color: @app-background-color;
 }
+
+.config-menu {
+  background-color: @tree-background-color !important;
+  li .icon {
+    color: @text-color-subtle;
+    &:hover {
+      background: @tree-selected-item-background-color !important;
+      color: white !important;
+    }
+  }
+  li.active {
+    .icon {
+      background: @tree-selected-item-background-color !important;
+      color: white;
+    }
+  }
+}
