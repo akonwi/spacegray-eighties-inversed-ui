@@ -13,14 +13,28 @@ status-bar {
 }
 
 .settings-view.pane-item {
+  .package-detail {
+    .breadcrumb li a { color: white; }
+  }
   .section {
     border: none;
   }
+  .section.packages .package-container .row .package-update-view .thumbnail {
+    background: @editor-background-color;
+    color: @text-color;
+    border: none;
+    .caption {
+      h4 { color: white; }
+    }
+    * { color: @text-color;}
+    .btn-toolbar .btn { background: white }
+  }
   background-color: @tree-background-color !important;
-  .section-heading, .text {
+  .section-heading, .sub-section-heading, .text {
     color: @text-color !important;
   }
   .package-card {
+    &:hover { background: @editor-background-color; }
     background: @editor-background-color;
     border: none;
     color: @text-color;
